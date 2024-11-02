@@ -1,0 +1,497 @@
+:root {
+  --black: #000000;
+  --grayDark: #a0a0a0;
+  --gray: #e7e7e7;
+  --white: #f4f5f7;
+  --mainColor: #39e139;
+
+  --fontOne: "Poppins", sans-serif;
+
+  --transition: all 0.3s ease;
+}
+
+/* font Poppins */
+/* Light */
+@font-face {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url("fonts/Poppins-Light.ttf") format("truetype");
+}
+/* Regular */
+@font-face {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("fonts/Poppins-Regular.ttf") format("truetype");
+}
+/* Medium */
+@font-face {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("fonts/Poppins-Medium.ttf") format("truetype");
+}
+/* Semibold */
+@font-face {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("fonts/Poppins-SemiBold.ttf") format("truetype");
+}
+/* Bold */
+@font-face {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("fonts/Poppins-Bold.ttf") format("truetype");
+}
+/* Extrabold */
+@font-face {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url("fonts/Poppins-ExtraBold.ttf") format("truetype");
+}
+
+/* font kalam */
+/* Light */
+@font-face {
+  font-family: "Kalam";
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url("fonts/Kalam-Light.ttf") format("truetype");
+}
+/* Regular */
+@font-face {
+  font-family: "Kalam";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("fonts/Kalam-Regular.ttf") format("truetype");
+}
+/* Bold */
+@font-face {
+  font-family: "Kalam";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("fonts/Kalam-Bold.ttf") format("truetype");
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; /* 1rem = 10px */
+  scroll-behavior: smooth;
+  background-color: var(--black);
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  font-family: var(--fontOne);
+  color: var(--white);
+  font-size: 18px;
+}
+
+.fullContainer {
+  max-width: 700px;
+  width: 90%;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 0px 0px 40px;
+}
+
+section {
+  display: grid;
+}
+
+span.main-color {
+  color: var(--mainColor);
+  font-weight: 700;
+}
+
+h1,
+h2,
+div.btn {
+  text-align: center;
+}
+
+h1 {
+  font-size: 26px;
+  font-family: var(--fontOne);
+  font-style: italic;
+  padding-bottom: 60px;
+  padding-top: 40px;
+}
+
+h2 {
+  background: var(--white);
+  color: var(--black);
+  padding: 40px 10px;
+  margin: 50px 0px 30px;
+  max-width: 601px;
+  width: -webkit-fill-available;
+  justify-self: center;
+  border-radius: 20px;
+  font-size: 32px;
+  font-family: "Kalam";
+  text-wrap: pretty;
+}
+
+h3 {
+  margin-top: 90px;
+  font-size: 18px;
+}
+
+p {
+  min-height: 15px;
+  color: var(--gray);
+  text-wrap: pretty;
+}
+
+header {
+  text-align: center;
+}
+
+header img {
+  height: 50px;
+  width: auto;
+  margin: 15px 15px 0px;
+}
+
+/* section1 */
+main .wistia_responsive_padding {
+  width: 100%;
+  height: auto;
+  max-width: 500px;
+  display: block;
+  margin: 40px auto;
+}
+
+.btn-main {
+  display: inline-block;
+  font-family: var(--fontOne);
+  font-weight: 600;
+  font-size: 24px;
+  color: var(--white);
+  padding: 10px 25px;
+  border-radius: 10px;
+  letter-spacing: 1px;
+  border: 1px solid var(--mainColor);
+  overflow: hidden;
+  position: relative;
+  transition: all 0.3s ease;
+  width: 80%;
+}
+
+.btn-main span {
+  z-index: 20;
+}
+
+.btn-main:after {
+  background: var(--mainColor);
+  content: "";
+  height: 175px;
+  left: -75px;
+  opacity: 0.8;
+  position: absolute;
+  top: -50px;
+  transform: rotate(35deg);
+  transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
+  width: 50px;
+  z-index: -10;
+}
+
+.btn-main:hover:after {
+  left: 120%;
+  transition: all 1.5s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.div-st1 .btn-main:hover,
+.div-st6 .btn-main:hover,
+.div-st8 .btn-main:hover {
+  filter: drop-shadow(1px 1px 10px #000);
+}
+
+.div-st1 section.fullContainer {
+  padding: 0px;
+}
+
+.div-st1,
+.div-st3,
+.div-st5 {
+  background-image: url(../img/bg1.webp);
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.div-st2,
+.div-st4,
+.div-st8 {
+  background-image: url(../img/bg2.webp);
+  width: 100%;
+  background-repeat: no-repeat;
+}
+
+.div-st7 {
+  background-image: url(../img/bg1.webp);
+  width: 100%;
+}
+
+.div-st3 img {
+  width: 100%;
+  height: auto;
+}
+
+/* section testimony */
+.section7 h2,
+.section8 h2 {
+  text-wrap: pretty;
+  padding: 0px;
+  margin: 50px 0px 0px;
+  filter: invert(1);
+}
+
+.section7 h2 span {
+  color: var(--mainColor);
+  filter: invert(1);
+}
+
+.section7 p,
+.section8 p {
+  color: var(--grayDark);
+  font-size: 17px;
+}
+
+.section7 p {
+  text-align: center;
+}
+
+.section7 .content {
+  background-color: #1c1c1c;
+  max-width: 90rem;
+  margin: 20px auto;
+  padding: 55px 30px 30px;
+  border-radius: 25px;
+  text-wrap: pretty;
+  display: flex;
+  gap: 15px;
+  text-align: center;
+}
+
+.section7 .content .profile {
+  width: 130px;
+  height: 140px;
+  border-radius: 20px;
+  border: 2px solid white;
+  object-fit: cover;
+  object-position: top;
+  filter: drop-shadow(3px 3px 4px gray);
+}
+
+.section7 .content h3 {
+  font-size: 23px;
+  padding-top: 10px;
+  color: var(--gray);
+  text-decoration: overline;
+  margin-top: 0px;
+}
+
+.section7 .content p {
+  max-width: 80rem;
+  line-height: 1.4;
+}
+
+.section7 .content p span {
+  color: var(--mainColor);
+  font-weight: 700;
+}
+
+.section7 .content .stars {
+  height: 15px;
+  width: auto;
+  margin-top: 15px;
+}
+
+/* section questions */
+.section8 .content {
+  background-color: #1c1c1c;
+  max-width: 90rem;
+  margin: 40px auto 0px;
+  padding: 20px 45px;
+
+  border-radius: 25px;
+  text-wrap: pretty;
+  position: relative;
+
+  text-align: initial;
+  letter-spacing: 0.3px;
+}
+
+.section8 .content article {
+  margin-bottom: 50px;
+}
+
+.section8 .content article:nth-last-child(1) {
+  margin-bottom: 0px;
+}
+
+.section8 .content article .question {
+  padding-bottom: 5px;
+}
+
+.section8 .content article .question svg {
+  width: 18px;
+  height: 18px;
+  fill: var(--white);
+  position: relative;
+  top: 3px;
+}
+
+.section8 .content article .question h3 {
+  font-size: 18px;
+  display: inline;
+}
+
+.section8 a svg {
+  width: 24px;
+  height: auto;
+  fill: var(--mainColor);
+  fill: var(--white);
+  position: relative;
+  top: 4px;
+}
+
+/* section footer */
+footer {
+  text-align: center;
+  padding: 30px 0px 40px;
+}
+
+footer img {
+  height: 40px;
+  width: auto;
+  margin: 10px 10px 10px 15px;
+}
+
+footer p {
+  font-size: 15px;
+}
+
+/* media queries */
+@media (max-width: 640px) {
+  .btn-main {
+    font-size: 18px;
+    padding: 6px 15px;
+    width: 100%;
+  }
+
+  .section7 p {
+    font-size: 12px;
+  }
+
+  .section7 .content {
+    margin: 30px auto 0px;
+    padding: 40px 30px 30px;
+  }
+
+  .section7 .content .profile {
+    width: 80px;
+    height: 90px;
+  }
+
+  .section7 .content h3 {
+    font-size: 18px;
+  }
+
+  .section8 .content {
+    margin: 20px auto 0px;
+  }
+
+  .section8 p {
+    font-size: 14px;
+  }
+
+  .section8 .content article .question h3 {
+    font-size: 16px;
+  }
+
+  .section8 a svg {
+    width: 18px;
+    top: 2px;
+  }
+}
+
+@media (min-width: 560px) {
+  main .wistia_responsive_padding {
+    padding: 660px 0px 0px !important;
+  }
+}
+
+@media (max-width: 420px) {
+  body {
+    font-size: 16px;
+  }
+
+  .btn-main {
+    font-size: 16px;
+    padding: 7px 10px;
+  }
+
+  h1 {
+    font-size: 22px;
+  }
+
+  h2 {
+    font-size: 25px;
+    margin: 30px 0px 30px;
+  }
+
+  h3 {
+    margin-top: 60px;
+    font-size: 16px;
+  }
+
+  p {
+    margin: 0 !important;
+  }
+
+  .section7 .content {
+    padding: 20px 15px;
+  }
+
+  .section8 .content {
+    padding: 10px;
+  }
+
+  .section8 .content article {
+    margin-bottom: 30px;
+  }
+
+  .section8 .content article .question svg {
+    width: 16px;
+    height: 16px;
+    top: 3px;
+  }
+
+  .section8 .content article .question h3 {
+    font-size: 14px;
+  }
+}
